@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lauren Tickner · Scale Your Coaching Company To 7 Figures</title>
+<meta name="description" content="Impact School is the application-only mentorship Lauren Tickner uses to help coaches and consultants scale past £20K months into proper companies.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+--bg:#141414;--bg-2:#1c1a1a;--surface:#252221;--line:rgba(232,165,165,.15);
+--text:#f6efec;--muted:#a89a96;--accent:#e8a5a5;--accent-2:#d67b7b;--accent-3:#f3c8c8;
+}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;line-height:1.65;overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;background-image:radial-gradient(circle,rgba(232,165,165,.03) 1px,transparent 1px);background-size:28px 28px;pointer-events:none;z-index:0}
+body::after{content:'';position:fixed;top:-25%;right:-15%;width:75%;height:75%;background:radial-gradient(circle,rgba(232,165,165,.07) 0%,transparent 60%);pointer-events:none;z-index:0}
+.container{max-width:1180px;margin:0 auto;padding:0 24px;position:relative;z-index:1}
+nav{padding:28px 0;border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(20,20,20,.92);backdrop-filter:blur(14px);z-index:100}
+.nav-inner{display:flex;justify-content:space-between;align-items:center}
+.logo{font-weight:800;font-size:20px;letter-spacing:.05em}
+.logo span{background:linear-gradient(135deg,var(--accent) 0%,var(--accent-3) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.nav-cta{padding:11px 22px;background:linear-gradient(135deg,var(--accent-2) 0%,var(--accent) 100%);color:#1c1a1a;border-radius:8px;text-decoration:none;font-weight:700;font-size:14px}
+section{padding:100px 0;position:relative}
+.eyebrow{display:inline-block;padding:6px 14px;background:rgba(232,165,165,.1);border:1px solid rgba(232,165,165,.3);border-radius:20px;font-size:12px;font-weight:600;color:var(--accent);letter-spacing:.18em;text-transform:uppercase;margin-bottom:24px}
+h1{font-size:clamp(40px,5.6vw,72px);font-weight:800;line-height:1.05;letter-spacing:-.03em;margin-bottom:24px}
+h1 em{font-style:normal;background:linear-gradient(135deg,var(--accent) 0%,var(--accent-3) 50%,var(--accent-2) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+h2{font-size:clamp(30px,4vw,46px);font-weight:700;line-height:1.15;letter-spacing:-.02em;margin-bottom:20px}
+h3{font-size:22px;font-weight:600;margin-bottom:14px}
+p{color:var(--muted);font-size:17px;max-width:680px}
+.hero{padding-top:80px;text-align:center}
+.hero p{font-size:20px;margin:0 auto 40px;max-width:720px}
+.cta-primary{display:inline-block;padding:18px 38px;background:linear-gradient(135deg,var(--accent-2) 0%,var(--accent) 100%);color:#1c1a1a;text-decoration:none;border-radius:12px;font-weight:700;font-size:16px;box-shadow:0 12px 40px rgba(232,165,165,.25);transition:.2s}
+.cta-primary:hover{transform:translateY(-2px)}
+.vsl-box{max-width:900px;margin:60px auto;aspect-ratio:16/9;background:linear-gradient(135deg,var(--surface) 0%,var(--bg-2) 100%);border:1px solid var(--line);border-radius:16px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.vsl-box::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at center,rgba(232,165,165,.1) 0%,transparent 60%)}
+.play-btn{width:88px;height:88px;border-radius:50%;background:rgba(232,165,165,.15);border:2px solid var(--accent);display:flex;align-items:center;justify-content:center;z-index:1}
+.play-btn svg{width:32px;height:32px;fill:var(--accent);margin-left:4px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;margin:80px 0 0;padding:40px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stat-num{font-size:38px;font-weight:800;background:linear-gradient(135deg,var(--accent) 0%,var(--accent-3) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:-.03em}
+.stat-label{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.12em;margin-top:6px}
+.problem-grid,.pillar-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:50px}
+.card{padding:36px;background:linear-gradient(180deg,var(--surface) 0%,var(--bg-2) 100%);border:1px solid var(--line);border-radius:16px;transition:.3s}
+.card:hover{border-color:rgba(232,165,165,.4);transform:translateY(-4px)}
+.card-num{font-size:13px;color:var(--accent);font-weight:700;letter-spacing:.18em;text-transform:uppercase;margin-bottom:16px}
+.card h3{color:var(--text)}
+.card p{font-size:15px}
+.divider{height:1px;background:linear-gradient(90deg,transparent 0%,var(--line) 50%,transparent 100%)}
+.lead-capture{background:linear-gradient(135deg,rgba(232,165,165,.08) 0%,rgba(214,123,123,.04) 100%);border:1px solid rgba(232,165,165,.2);border-radius:24px;padding:70px 60px;text-align:center;margin:80px 0}
+.lead-capture h2{max-width:640px;margin:0 auto 20px}
+.form-row{display:flex;gap:12px;max-width:520px;margin:36px auto 0}
+.form-row input{flex:1;padding:18px 22px;background:var(--bg);border:1px solid var(--line);border-radius:12px;color:var(--text);font-size:15px;font-family:inherit}
+.form-row input:focus{outline:none;border-color:var(--accent)}
+.form-row button{padding:18px 32px;background:linear-gradient(135deg,var(--accent-2) 0%,var(--accent) 100%);color:#1c1a1a;border:none;border-radius:12px;font-weight:700;font-size:15px;cursor:pointer;font-family:inherit}
+.offer-box{background:linear-gradient(135deg,#1f1c1c 0%,#2a2524 100%);border:1px solid rgba(232,165,165,.25);border-radius:24px;padding:60px;margin-top:40px}
+.offer-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:60px;align-items:center}
+.offer-price{font-size:46px;font-weight:800;background:linear-gradient(135deg,var(--accent) 0%,var(--accent-3) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:-.03em;line-height:1.1}
+.offer-price small{font-size:18px;color:var(--muted);font-weight:500;-webkit-text-fill-color:var(--muted);display:block;margin-top:6px}
+.feature-list{list-style:none;margin-top:24px}
+.feature-list li{padding:12px 0;color:var(--text);display:flex;align-items:flex-start;gap:12px;font-size:15px}
+.feature-list li::before{content:'✓';color:var(--accent);font-weight:700;flex-shrink:0}
+.faq-item{border-bottom:1px solid var(--line);padding:24px 0;cursor:pointer}
+.faq-q{display:flex;justify-content:space-between;align-items:center;font-weight:600;font-size:18px;color:var(--text)}
+.faq-plus{width:24px;height:24px;position:relative;flex-shrink:0}
+.faq-plus::before,.faq-plus::after{content:'';position:absolute;background:var(--accent);top:50%;left:50%;transition:.3s}
+.faq-plus::before{width:14px;height:2px;transform:translate(-50%,-50%)}
+.faq-plus::after{width:2px;height:14px;transform:translate(-50%,-50%)}
+.faq-item.open .faq-plus::after{transform:translate(-50%,-50%) rotate(90deg);opacity:0}
+.faq-a{max-height:0;overflow:hidden;transition:.3s}
+.faq-item.open .faq-a{max-height:400px;padding-top:14px}
+.footer{padding:60px 0;border-top:1px solid var(--line);text-align:center}
+.footer p{margin:0 auto;font-size:14px}
+@media(max-width:768px){
+.problem-grid,.pillar-grid,.stats{grid-template-columns:1fr}
+.offer-grid{grid-template-columns:1fr}
+.lead-capture,.offer-box{padding:40px 24px}
+.form-row{flex-direction:column}
+section{padding:70px 0}
+.stats{gap:20px}
+}
+@media(max-width:480px){
+.container{padding:0 18px}
+h1{font-size:36px}
+h2{font-size:26px}
+.nav-cta{padding:9px 16px;font-size:13px}
+.cta-primary{padding:16px 28px;font-size:15px}
+}
+.reveal{opacity:0;transform:translateY(30px);transition:.8s}
+.reveal.in{opacity:1;transform:translateY(0)}
+</style>
+</head>
+<body>
+<nav>
+<div class="container nav-inner">
+<div class="logo">LAUREN TICKNER · <span>GROWTH PACKAGE</span></div>
+<a href="#apply" class="nav-cta">Book A Call</a>
+</div>
+</nav>
+
+<section class="hero">
+<div class="container">
+<div class="eyebrow reveal">IMPACT SCHOOL · APPLICATION ONLY</div>
+<h1 class="reveal">Scale Your Coaching Company<br>Past <em>£20K Months</em> Without<br>Burning Out Doing It</h1>
+<p class="reveal">1,800 coaches and consultants. 30-person team. Forbes 30 Under 30. The application-only mentorship for operators ready to build proper companies, not bigger calendars.</p>
+<div class="vsl-box reveal">
+<div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+</div>
+<a href="#apply" class="cta-primary reveal">Apply For Impact School →</a>
+<div class="stats reveal">
+<div><div class="stat-num">127K</div><div class="stat-label">IG Following</div></div>
+<div><div class="stat-num">70K</div><div class="stat-label">YouTube Subs</div></div>
+<div><div class="stat-num">1,800+</div><div class="stat-label">Clients Served</div></div>
+<div><div class="stat-num">Forbes 30U30</div><div class="stat-label">Top Entrepreneur</div></div>
+</div>
+</div>
+</section>
+
+<div class="divider"></div>
+
+<section>
+<div class="container">
+<div class="eyebrow reveal">THE CEILING</div>
+<h2 class="reveal">Most Coaches Plateau<br>Between £15K And £25K A Month</h2>
+<p class="reveal" style="font-size:18px">It's almost never the offer. It's almost never the marketing. It's three operator-level decisions most coaches never get coached on.</p>
+<div class="problem-grid">
+<div class="card reveal"><div class="card-num">CEILING 01</div><h3>Selling Time For Money</h3><p>You're still on calls eight hours a day. Your calendar is the cap. One delivery hour from you reaches one client, so the maths stops working past a point.</p></div>
+<div class="card reveal"><div class="card-num">CEILING 02</div><h3>Closing In The DMs</h3><p>No real application, no qualification process, no structured close call. Past £30K months that breaks down. The decisions are too big for a chat thread.</p></div>
+<div class="card reveal"><div class="card-num">CEILING 03</div><h3>Scaling Without A Team</h3><p>You're trying to be the coach, the marketer, the closer, and the ops person. The lid is exhaustion, not ambition. You need a team and the systems to hold one.</p></div>
+</div>
+</div>
+</section>
+
+<div class="divider"></div>
+
+<section>
+<div class="container">
+<div class="eyebrow reveal">THE FRAMEWORK</div>
+<h2 class="reveal">Three Shifts. £20K To £100K Months.</h2>
+<div class="pillar-grid">
+<div class="card reveal"><div class="card-num">SHIFT 1</div><h3>Leveraged Delivery</h3><p>Group programmes, productized services, light-touch coaching containers. One delivery hour from you reaches more than one client. The maths starts working.</p></div>
+<div class="card reveal"><div class="card-num">SHIFT 2</div><h3>Real Sales Process</h3><p>Application form, qualification call, structured close call. Show rates above 70 percent, conversion you can actually measure, a process your team can run.</p></div>
+<div class="card reveal"><div class="card-num">SHIFT 3</div><h3>Team And Systems</h3><p>The right hires in the right order, plugged into infrastructure that holds them. Not a chaotic team that costs more than it earns.</p></div>
+</div>
+</div>
+</section>
+
+<div class="divider"></div>
+
+<section>
+<div class="container">
+<div class="lead-capture reveal">
+<div class="eyebrow">FREE PLAYBOOK</div>
+<h2>The Coach-To-CEO Playbook</h2>
+<p style="margin:0 auto">The full breakdown of the three shifts that take a coaching business past £20K months. Same framework my Impact School clients run. No upsell wall.</p>
+<form class="form-row" onsubmit="event.preventDefault();alert('Check your inbox - playbook sent.')">
+<input type="email" placeholder="Enter your email" required>
+<button type="submit">Get The Playbook →</button>
+</form>
+</div>
+</div>
+</section>
+
+<div class="divider"></div>
+
+<section id="apply">
+<div class="container">
+<div class="eyebrow reveal">THE PROGRAMME</div>
+<h2 class="reveal">Impact School Mentorship</h2>
+<div class="offer-box reveal">
+<div class="offer-grid">
+<div>
+<div class="offer-price">Application Only<small>Premium investment · Payment plans available for accepted operators</small></div>
+<p style="margin-top:16px">A 6-month application-only mentorship for coaches, consultants, and course creators with proof of concept who are ready to scale past their current ceiling. We accept roughly 3 in 10 applications. Investment is discussed on the qualification call once we've confirmed mutual fit.</p>
+<ul class="feature-list">
+<li>30-person team of senior coaches running weekly group calls</li>
+<li>1-to-1 strategy sessions tied to your specific bottleneck</li>
+<li>Full vault of pre-recorded operator playbooks</li>
+<li>Private community of operators at your level or above</li>
+<li>Sales process build-out with our team's direct support</li>
+<li>Team-building and ops infrastructure coaching</li>
+<li>Direct access to senior team between calls</li>
+</ul>
+</div>
+<div>
+<div style="background:rgba(232,165,165,.08);border:1px solid rgba(232,165,165,.2);border-radius:16px;padding:32px;text-align:center">
+<div class="eyebrow">CASE STUDY</div>
+<h3 style="margin-bottom:12px">Hannah. Relationship Coach. £14K To £62K In 90 Days.</h3>
+<p style="margin:0 auto 24px">Same skill set, same audience, different operator-level decisions. Group programme, real sales process, light paid traffic test.</p>
+<a href="#apply" class="cta-primary" style="width:100%">Apply Now →</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<div class="divider"></div>
+
+<section>
+<div class="container" style="max-width:820px">
+<div class="eyebrow reveal">FAQ</div>
+<h2 class="reveal">Common Questions</h2>
+<div style="margin-top:40px">
+<div class="faq-item reveal" onclick="this.classList.toggle('open')">
+<div class="faq-q"><span>Who is Impact School actually for?</span><div class="faq-plus"></div></div>
+<div class="faq-a"><p>Coaches, consultants, course creators, and service providers with proof of concept (typically £5K a month or more) who want to scale to multi-six or seven figures. We're not a fit for total beginners. There are better starting points for that.</p></div>
+</div>
+<div class="faq-item reveal" onclick="this.classList.toggle('open')">
+<div class="faq-q"><span>How long is the programme?</span><div class="faq-plus"></div></div>
+<div class="faq-a"><p>Six months of structured mentorship. Most accepted operators see meaningful changes inside the first 60 days and compounding results across the full container.</p></div>
+</div>
+<div class="faq-item reveal" onclick="this.classList.toggle('open')">
+<div class="faq-q"><span>What's the time commitment?</span><div class="faq-plus"></div></div>
+<div class="faq-a"><p>Roughly 3-5 hours per week between live calls, async coaching, and execution. Not a heavy time load on top of running your business. The framework is designed to integrate, not interrupt.</p></div>
+</div>
+<div class="faq-item reveal" onclick="this.classList.toggle('open')">
+<div class="faq-q"><span>Why do you turn down so many applications?</span><div class="faq-plus"></div></div>
+<div class="faq-a"><p>To keep the room sharp. Operators progress faster when the rest of the room is at or above their level. We turn down applications that aren't ready, that don't have proof of concept yet, or that aren't financially set up to invest properly.</p></div>
+</div>
+<div class="faq-item reveal" onclick="this.classList.toggle('open')">
+<div class="faq-q"><span>What does the application process look like?</span><div class="faq-plus"></div></div>
+<div class="faq-a"><p>Submit a 4-minute application. If you fit the criteria, a senior coach on the team books a qualification call within 48 hours. The call is honest both ways. If it's a fit we move forward. If it isn't, we'll point you somewhere better suited.</p></div>
+</div>
+</div>
+</div>
+</section>
+
+<section style="text-align:center">
+<div class="container">
+<h2 class="reveal">Ready To Scale Properly?</h2>
+<p class="reveal" style="margin:20px auto 40px">Application takes 4 minutes. We respond within 48 hours either way.</p>
+<a href="#apply" class="cta-primary reveal">Apply Now →</a>
+</div>
+</section>
+
+<footer class="footer">
+<div class="container">
+<p>Built by AG1 Consulting · info@andreicopy.net · April 2026</p>
+</div>
+</footer>
+
+<script>
+const obs=new IntersectionObserver(e=>e.forEach(x=>x.isIntersecting&&x.target.classList.add('in')),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(e=>obs.observe(e));
+</script>
+</body>
+</html>
